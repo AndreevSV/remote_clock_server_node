@@ -6,11 +6,10 @@ const URL_FRONTEND = 'https://andreevsv.github.io/remote_clock_frontend/';
 const PORT = process.env.PORT || 3000;
 
 const server = http.createServer((req, res) => {
-    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.statusCode = 200;
+    res.setHeader('Access-Control-Allow-Origin', `${URL_FRONTEND}`);
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-    
-    res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
     res.end(date);
     // sendDateToFrontend(date);
