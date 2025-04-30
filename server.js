@@ -2,7 +2,7 @@ import http from 'http';
 import { date } from './date';
 import { exec } from 'node:child_process';
 
-const URL_FRONTEND = 'https://andreevsv.github.io/remote_clock_frontend/';
+const URL_FRONTEND = 'https://andreevsv.github.io';
 const PORT = process.env.PORT || 3000;
 
 const server = http.createServer((req, res) => {
