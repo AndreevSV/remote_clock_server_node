@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/d745985b-f1ba-41c0-b419-7d319a61fedb/resourceGroups/remoteclockservernode/providers/Microsoft.Web/sites/remoteclockservernode",
+    "appService.deploySubpath": "."
+}
