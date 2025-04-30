@@ -1,8 +1,8 @@
 import http from 'http';
-import { date } from './date';
+import { date } from './date.js';
 import { exec } from 'node:child_process';
 
-const URL_FRONTEND = 'https://andreevsv.github.io';
+const URL_FRONTEND = 'https://andreevsv.github.io/';
 const PORT = process.env.PORT || 3000;
 
 const server = http.createServer((req, res) => {
