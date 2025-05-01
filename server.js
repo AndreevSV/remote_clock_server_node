@@ -2,12 +2,12 @@ import http from 'http';
 import { date } from './date.js';
 import { exec } from 'node:child_process';
 
-const URL_FRONTEND = 'https://andreevsv.github.io/';
+const URL_FRONTEND = 'https://andreevsv.github.io';
 const PORT = process.env.PORT || 3000;
 
 const server = http.createServer((req, res) => {
     res.statusCode = 200;
-    res.setHeader('Access-Control-Allow-Origin', `${URL_FRONTEND}`);
+    res.setHeader('Access-Control-Allow-Origin', URL_FRONTEND);
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
     res.setHeader('Content-Type', 'text/plain');
